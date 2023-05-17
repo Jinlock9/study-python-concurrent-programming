@@ -27,12 +27,16 @@ Refer to Inflearn Lecture - Python Concurrent Programming
       (ex. 요리사 한 명이 요리 3개를 동시에 요리) 
       동시성은 논리적 개념으로 멀티 스레딩에서 사용되기도 하고 싱글 스레드에서 사용되기도 합니다.
       또한 싱글 코어 뿐만 아니라 멀티 코어에서도 각각의 코어가 동시성을 사용할 수 있습니다.
+  - 동시성 -> I/O Bound에서 효과적 (multithreading은 GIL에 의해 병렬성은 차단되고 동시성만 사용 가능)
   - Parallelism: 한 번에 여러 작업을 병렬적으로 처리하는 것을 의미 (at the same time)
       (ex. 요리사 세 명이 각각 요리 1개씩 요리)
-  - WEB -> MultiThreading
-  - CPU related (simple calculation) -> MultiProcessing
+  - WEB (I/O Bound) -> MultiThreading
+  - CPU related (cpu bound) (simple calculation) 
+      -> MultiProcessing (Process 여러개 복제, 각 process끼리 연결되지 않아 따로 통시하는 비용이 듬)
 
 ## Section 3: Data Collecting using Concurrent Programming
+- Http: https://developer.mozilla.org/ko/docs/Web/HTTP
+- API: https://www.redhat.com/ko/topics/api/what-are-application-programming-interfaces
 
 ## Section 4: Understanding MongoDB
 
