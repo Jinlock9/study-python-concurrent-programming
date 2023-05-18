@@ -8,7 +8,7 @@
 
 from bs4 import BeautifulSoup
 import aiohttp
-import  asyncio
+import asyncio
 
 
 async def fetch(session, url):
